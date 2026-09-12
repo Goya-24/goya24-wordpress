@@ -23,7 +23,7 @@ final class Goya24_WooCommerce {
 	const AUTH_TTL = 15 * MINUTE_IN_SECONDS;
 
 	/** Where WooCommerce posts the keys it made. */
-	const CALLBACK_PATH = '/api/integrations/woocommerce/callback';
+	const CALLBACK_PATH = '/api/hooks/woocommerce';
 
 	/**
 	 * Hooks.

@@ -72,7 +72,7 @@ goya24 ──POST {state, key, secret, workspace}──▶ site/wp-json/goya24/v
 goya24 ──redirect──▶ wp-admin/options-general.php?page=goya24&goya24=connected
 ```
 
-The store uses WooCommerce's own flow: the plugin sends the owner to `/wc-auth/v1/authorize` with a short-lived token that names the workspace and is signed with the shared secret; WooCommerce creates the keys and posts them to `https://goya24.com/api/integrations/woocommerce/callback`, where goya24 verifies the token before storing anything.
+The store uses WooCommerce's own flow: the plugin sends the owner to `/wc-auth/v1/authorize` with a short-lived token that names the workspace and is signed with the shared secret; WooCommerce creates the keys and posts them to `https://goya24.com/api/hooks/woocommerce`, where goya24 verifies the token before storing anything.
 
 ## Development
 

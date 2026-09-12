@@ -79,7 +79,7 @@ class Test_WooCommerce extends WP_UnitTestCase {
 		parse_str( (string) wp_parse_url( $url, PHP_URL_QUERY ), $query );
 		$this->assertSame( 'goya24', $query['app_name'] );
 		$this->assertSame( 'read_write', $query['scope'] );
-		$this->assertSame( 'https://staging.example.com/api/integrations/woocommerce/callback', $query['callback_url'] );
+		$this->assertSame( 'https://staging.example.com/api/hooks/woocommerce', $query['callback_url'] );
 		$this->assertSame( 'https://example.org/wp-admin/options-general.php?page=goya24&goya24=store', $query['return_url'] );
 		$this->assertStringStartsWith( self::KEY . '.', $query['user_id'] );
 	}

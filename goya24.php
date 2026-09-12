@@ -13,7 +13,7 @@
  * Text Domain:       goya24
  * Domain Path:       /languages
  * WC requires at least: 8.0
- * WC tested up to:   10.4
+ * WC tested up to:   11.1
  *
  * @package Goya24
  */
