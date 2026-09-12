@@ -279,7 +279,7 @@ final class Goya24_Admin {
 		?>
 		<div class="wrap goya24-wrap">
 			<h1 class="goya24-title">
-				<span class="goya24-mark" aria-hidden="true"></span>
+				<img class="goya24-mark" src="<?php echo esc_url( GOYA24_URL . 'admin/goya24-mark.svg' ); ?>" alt="" width="28" height="28">
 				<?php esc_html_e( 'goya24', 'goya24' ); ?>
 			</h1>
 

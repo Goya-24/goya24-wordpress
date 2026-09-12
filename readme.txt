@@ -86,7 +86,8 @@ Everything it stored on this site is removed: the key, the secret and the settin
 
 1. Settings → goya24 before connecting: one button.
 2. Connected: the workspace, the identity proof and the store at a glance.
-3. The messenger on a WooCommerce store, in Persian.
+3. The consent page on goya24 — choose the workspace, done.
+4. The messenger on a WooCommerce store, in Persian.
 
 == Changelog ==
 
