@@ -1,0 +1,51 @@
+{
+  "name": "goya24/goya24-wordpress",
+  "description": "The goya24 AI support messenger for WordPress and WooCommerce.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/Goya-24/goya24-wordpress",
+  "support": {
+    "issues": "https://github.com/Goya-24/goya24-wordpress/issues",
+    "source": "https://github.com/Goya-24/goya24-wordpress"
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "php-stubs/woocommerce-stubs": "^9.0 || ^10.0 || ^11.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^9.6",
+    "roots/wordpress-no-content": "^6.8 || ^7.0",
+    "szepeviktor/phpstan-wordpress": "^2.0",
+    "wp-coding-standards/wpcs": "^3.1",
+    "wp-phpunit/wp-phpunit": "^6.8 || ^7.0",
+    "yoast/phpunit-polyfills": "^2.0 || ^3.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.33"
+    },
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "lint:fix": "phpcbf",
+    "analyse": "phpstan analyse --memory-limit=1G",
+    "test": "phpunit",
+    "check": [
+      "@lint",
+      "@analyse",
+      "@test"
+    ]
+  },
+  "scripts-descriptions": {
+    "lint": "WordPress coding standards and PHP 7.4+ compatibility, with phpcs.",
+    "analyse": "Static analysis with phpstan, WordPress and WooCommerce stubs loaded.",
+    "test": "The WordPress integration tests, against the database in wp-tests-config.php."
+  }
+}

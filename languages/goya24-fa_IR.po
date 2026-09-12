@@ -1,0 +1,323 @@
+# Persian translation of the goya24 plugin.
+# Copyright (C) 2026 Goya24
+# This file is distributed under the same license as the goya24 plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: goya24 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Goya-24/goya24-wordpress/issues\n"
+"POT-Creation-Date: 2026-09-12T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-09-12 00:00+0000\n"
+"Last-Translator: Goya24 <hello@goya24.com>\n"
+"Language-Team: Goya24 <hello@goya24.com>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: goya24\n"
+
+#. Plugin Name of the plugin
+#: goya24.php
+#: includes/class-goya24-admin.php
+msgid "goya24"
+msgstr "گویا۲۴"
+
+#. Description of the plugin
+#: goya24.php
+msgid "The goya24 AI support messenger on your site. It answers customers in Persian and English, hands off to your team, and with WooCommerce knows who is asking and finds their order."
+msgstr "پیام‌رسان پشتیبانی هوشمند گویا۲۴ روی سایت شما. به مشتری‌ها به فارسی و انگلیسی جواب می‌دهد، وقتی لازم باشد به تیم شما می‌سپارد، و با ووکامرس می‌داند چه کسی پرسیده و سفارشش را پیدا می‌کند."
+
+#. Author of the plugin
+#: goya24.php
+msgid "Goya24"
+msgstr "گویا۲۴"
+
+#: includes/class-goya24-admin.php
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: includes/class-goya24-admin.php
+msgid "Connect"
+msgstr "اتصال"
+
+#: includes/class-goya24-admin.php
+msgid "goya24 is installed but not connected yet."
+msgstr "گویا۲۴ نصب شده ولی هنوز وصل نیست."
+
+#: includes/class-goya24-admin.php
+msgid "The messenger appears on your site once it knows which workspace answers."
+msgstr "پیام‌رسان وقتی روی سایت می‌آید که بداند کدام فضای کاری جواب می‌دهد."
+
+#: includes/class-goya24-admin.php
+msgid "Connect to goya24"
+msgstr "اتصال به گویا۲۴"
+
+#: includes/class-goya24-admin.php
+msgid "Not now"
+msgstr "حالا نه"
+
+#: includes/class-goya24-admin.php
+msgid "You are not allowed to do that."
+msgstr "اجازهٔ این کار را ندارید."
+
+#: includes/class-goya24-admin.php
+msgid "Messenger"
+msgstr "پیام‌رسان"
+
+#: includes/class-goya24-admin.php
+msgid "How the messenger looks on your site. Everything about what it says — the agent, its knowledge, your team — is set in your goya24 workspace."
+msgstr "شکل پیام‌رسان روی سایت شما. هر چیزی که به حرف‌هایش مربوط می‌شود، یعنی دستیار و دانشش و تیم شما، در فضای کاری گویا۲۴ تنظیم می‌شود."
+
+#: includes/class-goya24-admin.php
+msgid "Language"
+msgstr "زبان"
+
+#: includes/class-goya24-admin.php
+msgid "Same as the site"
+msgstr "مثل زبان سایت"
+
+#: includes/class-goya24-admin.php
+msgid "Persian"
+msgstr "فارسی"
+
+#: includes/class-goya24-admin.php
+msgid "English"
+msgstr "انگلیسی"
+
+#: includes/class-goya24-admin.php
+msgid "Colours"
+msgstr "رنگ‌ها"
+
+#: includes/class-goya24-admin.php
+msgid "Match the page"
+msgstr "هماهنگ با صفحه"
+
+#: includes/class-goya24-admin.php
+msgid "Light"
+msgstr "روشن"
+
+#: includes/class-goya24-admin.php
+msgid "Dark"
+msgstr "تیره"
+
+#: includes/class-goya24-admin.php
+msgid "Corner"
+msgstr "گوشه"
+
+#: includes/class-goya24-admin.php
+msgid "Bottom right"
+msgstr "پایین راست"
+
+#: includes/class-goya24-admin.php
+msgid "Bottom left"
+msgstr "پایین چپ"
+
+#: includes/class-goya24-admin.php
+msgid "Signed-in customers"
+msgstr "مشتری‌های واردشده"
+
+#: includes/class-goya24-admin.php
+msgid "Tell the messenger who is signed in"
+msgstr "به پیام‌رسان بگو چه کسی وارد سایت شده"
+
+#: includes/class-goya24-admin.php
+msgid "The agent greets a signed-in customer by name and, with WooCommerce connected, can find their orders without asking who they are. Their id is signed by this server, so nobody can pretend to be somebody else."
+msgstr "دستیار مشتری واردشده را با اسم صدا می‌زند و اگر ووکامرس وصل باشد، بدون اینکه بپرسد کیست سفارش‌هایش را پیدا می‌کند. شناسهٔ کاربر را همین سرور امضا می‌کند، پس کسی نمی‌تواند خودش را جای دیگری جا بزند."
+
+#: includes/class-goya24-admin.php
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: includes/class-goya24-admin.php
+msgid "Workspace key"
+msgstr "کلید فضای کاری"
+
+#: includes/class-goya24-admin.php
+msgid "Set by GOYA24_KEY in wp-config.php."
+msgstr "با GOYA24_KEY در wp-config.php تعیین شده است."
+
+#: includes/class-goya24-admin.php
+msgid "The Connect button fills this in. To do it by hand, copy it from Settings → Install in your workspace."
+msgstr "دکمهٔ اتصال این را خودش پر می‌کند. اگر می‌خواهید دستی وارد کنید، از «تنظیمات ← نصب» در فضای کاری کپی کنید."
+
+#: includes/class-goya24-admin.php
+msgid "Identity secret"
+msgstr "کلید امضا"
+
+#: includes/class-goya24-admin.php
+msgid "Set by GOYA24_IDENTITY_SECRET in wp-config.php."
+msgstr "با GOYA24_IDENTITY_SECRET در wp-config.php تعیین شده است."
+
+#: includes/class-goya24-admin.php
+msgid "•••••••• (set — leave blank to keep)"
+msgstr "•••••••• (ثبت شده. برای نگه داشتن خالی بگذارید)"
+
+#: includes/class-goya24-admin.php
+msgid "Signs the ids of signed-in customers. Made on the Install page of your workspace and shown once; the Connect button brings it over on its own."
+msgstr "شناسهٔ مشتری‌های واردشده را امضا می‌کند. در صفحهٔ نصب فضای کاری ساخته می‌شود و فقط یک بار نشان داده می‌شود. دکمهٔ اتصال خودش آن را می‌آورد."
+
+#: includes/class-goya24-admin.php
+msgid "Service address"
+msgstr "آدرس سرویس"
+
+#: includes/class-goya24-admin.php
+msgid "Set by GOYA24_ORIGIN in wp-config.php."
+msgstr "با GOYA24_ORIGIN در wp-config.php تعیین شده است."
+
+#: includes/class-goya24-admin.php
+msgid "Only for a self-hosted goya24. Leave blank for the service."
+msgstr "فقط برای گویا۲۴ روی سرور خودتان. برای سرویس اصلی خالی بگذارید."
+
+#: includes/class-goya24-admin.php
+msgid "Put the messenger on your site"
+msgstr "پیام‌رسان را روی سایتتان بگذارید"
+
+#: includes/class-goya24-admin.php
+msgid "One button. You sign in to goya24, choose the workspace that answers for this site, and come back connected — the key and the identity secret arrive on their own, nothing to copy."
+msgstr "فقط یک دکمه. وارد گویا۲۴ می‌شوید، فضای کاری‌ای را که برای این سایت جواب می‌دهد انتخاب می‌کنید و وصل‌شده برمی‌گردید. کلید و کلید امضا خودشان می‌آیند، چیزی برای کپی کردن نیست."
+
+#. translators: %s: link to goya24 sign-up
+#: includes/class-goya24-admin.php
+msgid "No workspace yet? %s — it takes a minute, and the messenger works from the first message."
+msgstr "هنوز فضای کاری ندارید؟ %s. یک دقیقه طول می‌کشد و پیام‌رسان از همان پیام اول کار می‌کند."
+
+#: includes/class-goya24-admin.php
+msgid "Create one"
+msgstr "یکی بسازید"
+
+#: includes/class-goya24-admin.php
+msgid "Connected"
+msgstr "وصل است"
+
+#. translators: 1: workspace name, 2: date
+#: includes/class-goya24-admin.php
+msgid "This site talks to the workspace %1$s, since %2$s. The messenger is on every public page."
+msgstr "این سایت از %2$s به فضای کاری %1$s وصل است. پیام‌رسان روی همهٔ صفحه‌های عمومی هست."
+
+#. translators: %s: workspace name or key
+#: includes/class-goya24-admin.php
+msgid "This site talks to the workspace %s. The messenger is on every public page."
+msgstr "این سایت به فضای کاری %s وصل است. پیام‌رسان روی همهٔ صفحه‌های عمومی هست."
+
+#: includes/class-goya24-admin.php
+msgid "Signed-in customers are introduced with proof."
+msgstr "مشتری‌های واردشده با امضا معرفی می‌شوند."
+
+#: includes/class-goya24-admin.php
+msgid "No identity secret: signed-in customers are introduced as a claim, and the agent will not look their orders up. Reconnect to fix this."
+msgstr "کلید امضا ندارید: مشتری‌های واردشده فقط به‌عنوان ادعا معرفی می‌شوند و دستیار سفارش‌هایشان را پیدا نمی‌کند. برای درست شدنش دوباره وصل شوید."
+
+#. translators: %s: date
+#: includes/class-goya24-admin.php
+msgid "Store connected on %s: the agent can find a customer's order."
+msgstr "فروشگاه از %s وصل است: دستیار می‌تواند سفارش مشتری را پیدا کند."
+
+#: includes/class-goya24-admin.php
+msgid "Store not connected yet: the agent cannot see orders. See WooCommerce below."
+msgstr "فروشگاه هنوز وصل نیست: دستیار سفارش‌ها را نمی‌بیند. بخش ووکامرس را پایین‌تر ببینید."
+
+#: includes/class-goya24-admin.php
+msgid "Open goya24"
+msgstr "باز کردن گویا۲۴"
+
+#: includes/class-goya24-admin.php
+msgid "See it on the site"
+msgstr "دیدنش روی سایت"
+
+#: includes/class-goya24-admin.php
+msgid "Connect a different workspace"
+msgstr "اتصال به فضای کاری دیگر"
+
+#: includes/class-goya24-admin.php
+msgid "Disconnect? The messenger disappears from the site until you connect again."
+msgstr "قطع شود؟ پیام‌رسان تا وقتی دوباره وصل نشوید از سایت برداشته می‌شود."
+
+#: includes/class-goya24-admin.php
+msgid "Disconnect"
+msgstr "قطع اتصال"
+
+#: includes/class-goya24-admin.php
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+#: includes/class-goya24-admin.php
+msgid "With the store connected, the agent looks up the order a customer asks about, checks what is in stock, and — only when a teammate approves — changes an order's status. WooCommerce makes the keys itself on its own screen; nothing is copied by hand."
+msgstr "وقتی فروشگاه وصل باشد، دستیار سفارشی را که مشتری می‌پرسد پیدا می‌کند، موجودی را چک می‌کند و فقط با تأیید یکی از تیم، وضعیت سفارش را عوض می‌کند. کلیدها را خود ووکامرس در صفحهٔ خودش می‌سازد؛ چیزی دستی کپی نمی‌شود."
+
+#: includes/class-goya24-admin.php
+msgid "Orders"
+msgstr "سفارش‌ها"
+
+#. translators: %s: date
+#: includes/class-goya24-admin.php
+msgid "Connected on %s."
+msgstr "از %s وصل است."
+
+#: includes/class-goya24-admin.php
+msgid "Connect the store again"
+msgstr "اتصال دوبارهٔ فروشگاه"
+
+#: includes/class-goya24-admin.php
+msgid "The keys live in WooCommerce → Settings → Advanced → REST API, named goya24. Revoke them there to cut the store off."
+msgstr "کلیدها در «ووکامرس ← تنظیمات ← پیشرفته ← REST API» با نام goya24 هستند. برای قطع فروشگاه، همان‌جا حذفشان کنید."
+
+#: includes/class-goya24-admin.php
+msgid "Connect the store"
+msgstr "اتصال فروشگاه"
+
+#: includes/class-goya24-admin.php
+msgid "WooCommerce will ask you to approve read and write access for goya24, then bring you back here."
+msgstr "ووکامرس از شما می‌خواهد دسترسی خواندن و نوشتن گویا۲۴ را تأیید کنید، بعد شما را به همین‌جا برمی‌گرداند."
+
+#: includes/class-goya24-admin.php
+msgid "Connect the site to a workspace with the button at the top first; the store connection is signed with what that brings over."
+msgstr "اول با دکمهٔ بالای صفحه سایت را به یک فضای کاری وصل کنید؛ اتصال فروشگاه با همان چیزی امضا می‌شود که از آنجا می‌آید."
+
+#: includes/class-goya24-admin.php
+msgid "Connected. The messenger is on your site now — open a page and look in the corner."
+msgstr "وصل شد. پیام‌رسان الان روی سایت شماست. یک صفحه را باز کنید و گوشه‌اش را ببینید."
+
+#: includes/class-goya24-admin.php
+msgid "Disconnected. The messenger is off the site until you connect again."
+msgstr "قطع شد. پیام‌رسان تا وقتی دوباره وصل نشوید روی سایت نیست."
+
+#: includes/class-goya24-admin.php
+msgid "Store connected. The agent can now find a customer's order."
+msgstr "فروشگاه وصل شد. دستیار حالا می‌تواند سفارش مشتری را پیدا کند."
+
+#: includes/class-goya24-admin.php
+msgid "WooCommerce did not connect the store."
+msgstr "ووکامرس فروشگاه را وصل نکرد."
+
+#: includes/class-goya24-admin.php
+msgid "Connect the site to a workspace first, then the store."
+msgstr "اول سایت را به یک فضای کاری وصل کنید، بعد فروشگاه را."
+
+#: includes/class-goya24-admin.php
+msgid "goya24 could not connect this site."
+msgstr "گویا۲۴ نتوانست این سایت را وصل کند."
+
+#: includes/class-goya24-connect.php
+msgid "This connection request is unknown or has expired. Start again from the plugin settings."
+msgstr "این درخواست اتصال ناشناخته است یا مهلتش تمام شده. از تنظیمات افزونه دوباره شروع کنید."
+
+#: includes/class-goya24-connect.php
+msgid "The workspace key is not in the expected form."
+msgstr "کلید فضای کاری به شکل درستی نیست."
+
+#: includes/class-goya24-connect.php
+msgid "The identity secret is not in the expected form."
+msgstr "کلید امضا به شکل درستی نیست."
+
+#: includes/class-goya24-options.php
+msgid "That does not look like a workspace key. It starts with d24_pk_ and is on the Install page of your goya24 workspace."
+msgstr "این شبیه کلید فضای کاری نیست. کلید با d24_pk_ شروع می‌شود و در صفحهٔ نصب فضای کاری گویا۲۴ است."
+
+#: includes/class-goya24-options.php
+msgid "That does not look like an identity secret. It is made on the Install page of your goya24 workspace and shown once."
+msgstr "این شبیه کلید امضا نیست. کلید امضا در صفحهٔ نصب فضای کاری گویا۲۴ ساخته می‌شود و فقط یک بار نشان داده می‌شود."
+
+#: includes/class-goya24-options.php
+msgid "The service address must be an https address with nothing after the host, like https://goya24.com."
+msgstr "آدرس سرویس باید یک آدرس https باشد بدون چیزی بعد از نام دامنه، مثل https://goya24.com."

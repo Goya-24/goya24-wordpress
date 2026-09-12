@@ -1,0 +1,29 @@
+name: Bug report
+description: Something does not do what the readme says it does.
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Plugin, WordPress, WooCommerce and PHP versions
+      placeholder: "goya24 0.1.0, WordPress 7.1, WooCommerce 11.1, PHP 8.2"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: What you pressed, in order, starting from a fresh page.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Anything from the browser console or debug.log
+      render: text

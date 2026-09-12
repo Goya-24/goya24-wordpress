@@ -1,0 +1,60 @@
+# A WordPress to develop the plugin against.
+#
+#   docker compose up -d
+#   docker compose run --rm cli wp core install --url=http://localhost:8080 \
+#       --title=Shop --admin_user=admin --admin_password=admin --admin_email=admin@example.com
+#   docker compose run --rm cli wp plugin activate goya24
+#   docker compose run --rm cli wp plugin install woocommerce --activate   # optional
+#
+# The repository is mounted as the plugin, so edits are live. Point the plugin
+# at a local goya24 with GOYA24_ORIGIN=http://localhost:3000 in the environment
+# before `up`; it defaults to the real service.
+
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        define( 'GOYA24_ORIGIN', '${GOYA24_ORIGIN:-https://goya24.com}' );
+        define( 'WP_ENVIRONMENT_TYPE', 'local' );
+    volumes:
+      - wordpress:/var/www/html
+      - .:/var/www/html/wp-content/plugins/goya24
+
+  cli:
+    image: wordpress:cli
+    profiles: ["cli"]
+    depends_on:
+      - db
+    user: "33:33"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress:/var/www/html
+      - .:/var/www/html/wp-content/plugins/goya24
+
+volumes:
+  db:
+  wordpress:

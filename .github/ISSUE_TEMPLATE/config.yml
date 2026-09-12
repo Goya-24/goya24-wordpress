@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions about your goya24 workspace
+    url: mailto:support@goya24.com
+    about: Account, billing and messenger-settings questions go to support, not the plugin tracker.
+  - name: Security
+    url: https://github.com/Goya-24/goya24-wordpress/security/policy
+    about: Please report vulnerabilities privately.

@@ -1,0 +1,19 @@
+name: Feature request
+description: Something the plugin should do on a WordPress or WooCommerce site.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation on your site, not the solution yet.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like the plugin to do?
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it today?

@@ -1,0 +1,12 @@
+/vendor/
+/node_modules/
+/build/
+/tests/wp-content/
+/.phpunit.result.cache
+/phpcs.xml
+/phpstan.neon
+/phpunit.xml
+/.phpcs.cache
+*.zip
+.DS_Store
+Thumbs.db

@@ -1,0 +1,339 @@
+# Copyright (C) 2026 Goya24
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: goya24 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Goya-24/goya24-wordpress/issues\n"
+"Last-Translator: Goya24 <hello@goya24.com>\n"
+"Language-Team: Goya24 <hello@goya24.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-11T23:58:58+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: goya24\n"
+
+#. Plugin Name of the plugin
+#: goya24.php
+#: includes/class-goya24-admin.php:60
+#: includes/class-goya24-admin.php:61
+#: includes/class-goya24-admin.php:257
+msgid "goya24"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: goya24.php
+msgid "https://github.com/Goya-24/goya24-wordpress"
+msgstr ""
+
+#. Description of the plugin
+#: goya24.php
+msgid "The goya24 AI support messenger on your site. It answers customers in Persian and English, hands off to your team, and with WooCommerce knows who is asking and finds their order."
+msgstr ""
+
+#. Author of the plugin
+#: goya24.php
+msgid "Goya24"
+msgstr ""
+
+#. Author URI of the plugin
+#: goya24.php
+msgid "https://goya24.com"
+msgstr ""
+
+#: includes/class-goya24-admin.php:102
+msgid "Settings"
+msgstr ""
+
+#: includes/class-goya24-admin.php:102
+msgid "Connect"
+msgstr ""
+
+#: includes/class-goya24-admin.php:126
+msgid "goya24 is installed but not connected yet."
+msgstr ""
+
+#: includes/class-goya24-admin.php:127
+msgid "The messenger appears on your site once it knows which workspace answers."
+msgstr ""
+
+#: includes/class-goya24-admin.php:128
+#: includes/class-goya24-admin.php:382
+msgid "Connect to goya24"
+msgstr ""
+
+#: includes/class-goya24-admin.php:129
+msgid "Not now"
+msgstr ""
+
+#: includes/class-goya24-admin.php:217
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: includes/class-goya24-admin.php:273
+msgid "Messenger"
+msgstr ""
+
+#: includes/class-goya24-admin.php:274
+msgid "How the messenger looks on your site. Everything about what it says — the agent, its knowledge, your team — is set in your goya24 workspace."
+msgstr ""
+
+#: includes/class-goya24-admin.php:279
+msgid "Language"
+msgstr ""
+
+#: includes/class-goya24-admin.php:281
+msgid "Same as the site"
+msgstr ""
+
+#: includes/class-goya24-admin.php:282
+msgid "Persian"
+msgstr ""
+
+#: includes/class-goya24-admin.php:283
+msgid "English"
+msgstr ""
+
+#: includes/class-goya24-admin.php:289
+msgid "Colours"
+msgstr ""
+
+#: includes/class-goya24-admin.php:291
+msgid "Match the page"
+msgstr ""
+
+#: includes/class-goya24-admin.php:292
+msgid "Light"
+msgstr ""
+
+#: includes/class-goya24-admin.php:293
+msgid "Dark"
+msgstr ""
+
+#: includes/class-goya24-admin.php:299
+msgid "Corner"
+msgstr ""
+
+#: includes/class-goya24-admin.php:301
+msgid "Bottom right"
+msgstr ""
+
+#: includes/class-goya24-admin.php:302
+msgid "Bottom left"
+msgstr ""
+
+#: includes/class-goya24-admin.php:308
+msgid "Signed-in customers"
+msgstr ""
+
+#: includes/class-goya24-admin.php:312
+msgid "Tell the messenger who is signed in"
+msgstr ""
+
+#: includes/class-goya24-admin.php:315
+msgid "The agent greets a signed-in customer by name and, with WooCommerce connected, can find their orders without asking who they are. Their id is signed by this server, so nobody can pretend to be somebody else."
+msgstr ""
+
+#: includes/class-goya24-admin.php:326
+msgid "Advanced"
+msgstr ""
+
+#: includes/class-goya24-admin.php:329
+msgid "Workspace key"
+msgstr ""
+
+#: includes/class-goya24-admin.php:333
+msgid "Set by GOYA24_KEY in wp-config.php."
+msgstr ""
+
+#: includes/class-goya24-admin.php:336
+msgid "The Connect button fills this in. To do it by hand, copy it from Settings → Install in your workspace."
+msgstr ""
+
+#: includes/class-goya24-admin.php:341
+msgid "Identity secret"
+msgstr ""
+
+#: includes/class-goya24-admin.php:344
+msgid "Set by GOYA24_IDENTITY_SECRET in wp-config.php."
+msgstr ""
+
+#: includes/class-goya24-admin.php:346
+msgid "•••••••• (set — leave blank to keep)"
+msgstr ""
+
+#: includes/class-goya24-admin.php:347
+msgid "Signs the ids of signed-in customers. Made on the Install page of your workspace and shown once; the Connect button brings it over on its own."
+msgstr ""
+
+#: includes/class-goya24-admin.php:352
+msgid "Service address"
+msgstr ""
+
+#: includes/class-goya24-admin.php:356
+msgid "Set by GOYA24_ORIGIN in wp-config.php."
+msgstr ""
+
+#: includes/class-goya24-admin.php:359
+msgid "Only for a self-hosted goya24. Leave blank for the service."
+msgstr ""
+
+#: includes/class-goya24-admin.php:379
+msgid "Put the messenger on your site"
+msgstr ""
+
+#: includes/class-goya24-admin.php:380
+msgid "One button. You sign in to goya24, choose the workspace that answers for this site, and come back connected — the key and the identity secret arrive on their own, nothing to copy."
+msgstr ""
+
+#. translators: %s: link to goya24 sign-up
+#: includes/class-goya24-admin.php:388
+#, php-format
+msgid "No workspace yet? %s — it takes a minute, and the messenger works from the first message."
+msgstr ""
+
+#: includes/class-goya24-admin.php:389
+msgid "Create one"
+msgstr ""
+
+#: includes/class-goya24-admin.php:413
+msgid "Connected"
+msgstr ""
+
+#. translators: 1: workspace name, 2: date
+#: includes/class-goya24-admin.php:420
+#, php-format
+msgid "This site talks to the workspace %1$s, since %2$s. The messenger is on every public page."
+msgstr ""
+
+#. translators: %s: workspace name or key
+#: includes/class-goya24-admin.php:427
+#, php-format
+msgid "This site talks to the workspace %s. The messenger is on every public page."
+msgstr ""
+
+#: includes/class-goya24-admin.php:437
+msgid "Signed-in customers are introduced with proof."
+msgstr ""
+
+#: includes/class-goya24-admin.php:440
+msgid "No identity secret: signed-in customers are introduced as a claim, and the agent will not look their orders up. Reconnect to fix this."
+msgstr ""
+
+#. translators: %s: date
+#: includes/class-goya24-admin.php:450
+#, php-format
+msgid "Store connected on %s: the agent can find a customer's order."
+msgstr ""
+
+#: includes/class-goya24-admin.php:456
+msgid "Store not connected yet: the agent cannot see orders. See WooCommerce below."
+msgstr ""
+
+#: includes/class-goya24-admin.php:463
+msgid "Open goya24"
+msgstr ""
+
+#: includes/class-goya24-admin.php:464
+msgid "See it on the site"
+msgstr ""
+
+#: includes/class-goya24-admin.php:466
+msgid "Connect a different workspace"
+msgstr ""
+
+#: includes/class-goya24-admin.php:467
+msgid "Disconnect? The messenger disappears from the site until you connect again."
+msgstr ""
+
+#: includes/class-goya24-admin.php:467
+msgid "Disconnect"
+msgstr ""
+
+#: includes/class-goya24-admin.php:484
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/class-goya24-admin.php:485
+msgid "With the store connected, the agent looks up the order a customer asks about, checks what is in stock, and — only when a teammate approves — changes an order's status. WooCommerce makes the keys itself on its own screen; nothing is copied by hand."
+msgstr ""
+
+#: includes/class-goya24-admin.php:488
+msgid "Orders"
+msgstr ""
+
+#. translators: %s: date
+#: includes/class-goya24-admin.php:496
+#, php-format
+msgid "Connected on %s."
+msgstr ""
+
+#: includes/class-goya24-admin.php:501
+msgid "Connect the store again"
+msgstr ""
+
+#: includes/class-goya24-admin.php:502
+msgid "The keys live in WooCommerce → Settings → Advanced → REST API, named goya24. Revoke them there to cut the store off."
+msgstr ""
+
+#: includes/class-goya24-admin.php:504
+#: includes/class-goya24-admin.php:507
+msgid "Connect the store"
+msgstr ""
+
+#: includes/class-goya24-admin.php:505
+msgid "WooCommerce will ask you to approve read and write access for goya24, then bring you back here."
+msgstr ""
+
+#: includes/class-goya24-admin.php:508
+msgid "Connect the site to a workspace with the button at the top first; the store connection is signed with what that brings over."
+msgstr ""
+
+#: includes/class-goya24-admin.php:556
+msgid "Connected. The messenger is on your site now — open a page and look in the corner."
+msgstr ""
+
+#: includes/class-goya24-admin.php:557
+msgid "Disconnected. The messenger is off the site until you connect again."
+msgstr ""
+
+#: includes/class-goya24-admin.php:558
+msgid "Store connected. The agent can now find a customer's order."
+msgstr ""
+
+#: includes/class-goya24-admin.php:559
+msgid "WooCommerce did not connect the store."
+msgstr ""
+
+#: includes/class-goya24-admin.php:560
+msgid "Connect the site to a workspace first, then the store."
+msgstr ""
+
+#: includes/class-goya24-admin.php:561
+msgid "goya24 could not connect this site."
+msgstr ""
+
+#: includes/class-goya24-connect.php:122
+msgid "This connection request is unknown or has expired. Start again from the plugin settings."
+msgstr ""
+
+#: includes/class-goya24-connect.php:131
+msgid "The workspace key is not in the expected form."
+msgstr ""
+
+#: includes/class-goya24-connect.php:140
+msgid "The identity secret is not in the expected form."
+msgstr ""
+
+#: includes/class-goya24-options.php:238
+msgid "That does not look like a workspace key. It starts with d24_pk_ and is on the Install page of your goya24 workspace."
+msgstr ""
+
+#: includes/class-goya24-options.php:252
+msgid "That does not look like an identity secret. It is made on the Install page of your goya24 workspace and shown once."
+msgstr ""
+
+#: includes/class-goya24-options.php:268
+msgid "The service address must be an https address with nothing after the host, like https://goya24.com."
+msgstr ""

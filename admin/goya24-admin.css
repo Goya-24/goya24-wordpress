@@ -1,0 +1,143 @@
+/* Settings → goya24. WordPress's own admin styles do the work; this only
+   shapes the connection card and keeps the rows readable in both directions. */
+
+.goya24-wrap {
+	max-width: 760px;
+}
+
+.goya24-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.goya24-mark {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border-radius: 7px;
+	background: #0e7c86;
+	background-image: radial-gradient(circle at 50% 46%, #fff 0 4px, transparent 4.5px);
+	flex: none;
+}
+
+.goya24-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	padding: 20px 24px;
+	margin: 16px 0 28px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.goya24-card h2 {
+	margin: 0 0 8px;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.goya24-card > p,
+.goya24-card-body > p {
+	font-size: 14px;
+	line-height: 1.7;
+	max-width: 62ch;
+	margin: 0 0 12px;
+}
+
+.goya24-card--connect {
+	border-color: #0e7c86;
+}
+
+.goya24-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	margin: 14px 0 6px !important;
+}
+
+.goya24-facts {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.goya24-facts li {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 0 0 6px;
+	line-height: 1.6;
+}
+
+.goya24-dot {
+	flex: none;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	margin-top: 0.55em;
+	background: #c3c4c7;
+}
+
+.goya24-card h2 .goya24-dot {
+	margin-top: 0;
+}
+
+.goya24-dot--on {
+	background: #00a32a;
+}
+
+.goya24-dot--off {
+	background: #d63638;
+}
+
+.goya24-link-danger {
+	color: #b32d2e;
+	text-decoration: none;
+	margin-inline-start: 6px;
+}
+
+.goya24-link-danger:hover {
+	color: #d63638;
+	text-decoration: underline;
+}
+
+.goya24-radio {
+	display: inline-flex;
+	align-items: center;
+	margin-inline-end: 18px;
+	margin-bottom: 4px;
+}
+
+.goya24-advanced {
+	margin-top: 24px;
+	border-top: 1px solid #dcdcde;
+	padding-top: 12px;
+}
+
+.goya24-advanced summary {
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: 600;
+	margin: 8px 0;
+}
+
+.goya24-notice p {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+}
+
+.goya24-notice-dismiss {
+	color: #646970;
+	text-decoration: none;
+}
+
+/* The key and the secret are Latin whatever the site's language. */
+.goya24-form input.code {
+	font-family: Consolas, Monaco, monospace;
+	text-align: left;
+}

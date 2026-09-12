@@ -1,0 +1,66 @@
+name: Release
+
+# A tag `vX.Y.Z` on main becomes a GitHub release with `goya24.zip` attached —
+# what the goya24 Install page links to. The WordPress.org directory is a
+# second step below, switched on with the repository variable WPORG_DEPLOY
+# once the plugin is listed there.
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: The tag must match the plugin
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          version="$(sed -n 's/^ \* Version: *\([0-9.]*\).*/\1/p' goya24.php)"
+          if [ "$tag" != "$version" ]; then
+            echo "tag v$tag but goya24.php says $version" >&2
+            exit 1
+          fi
+
+      - run: bin/build-zip.sh
+
+      - name: Release notes from the changelog
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          awk -v v="$version" '
+            $0 ~ "^## \\[" v "\\]" { on = 1; next }
+            on && /^## \[/ { exit }
+            on { print }
+          ' CHANGELOG.md > notes.md
+          if [ ! -s notes.md ]; then
+            echo "No changelog entry for $version" >&2
+            exit 1
+          fi
+
+      - name: GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/goya24.zip \
+            --title "goya24 ${GITHUB_REF_NAME#v}" \
+            --notes-file notes.md
+
+      - name: WordPress.org
+        # Needs the SVN_USERNAME and SVN_PASSWORD secrets of the wordpress.org
+        # account that owns the listing. Banner, icon and screenshots come
+        # from .wordpress-org/.
+        if: vars.WPORG_DEPLOY == 'true'
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          generate-zip: false
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: goya24
+          ASSETS_DIR: .wordpress-org
