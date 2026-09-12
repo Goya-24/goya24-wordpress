@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://goya24.com/brand/goya24-icon.svg" width="72" alt="">
+  <img src="https://raw.githubusercontent.com/Goya-24/.github/main/profile/goya24-icon.svg" width="72" alt="">
 </p>
 
 <h1 align="center">goya24 for WordPress and WooCommerce</h1>
