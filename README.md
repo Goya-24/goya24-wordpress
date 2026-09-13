@@ -21,7 +21,7 @@
 - **The messenger on every public page.** One `async` script tag, added by the plugin; the messenger itself lives in a frame served by goya24, so a fix on the service reaches every site without a plugin update.
 - **One-button connection.** Settings → goya24 → _Connect to goya24_. You sign in, choose the workspace, and come back connected: the workspace key and the identity secret are posted to the site server-to-server, never through the address bar.
 - **Signed-in users, with proof.** The server signs the user's id with the workspace's secret (`hmac_sha256(secret, id)`); goya24 checks it before trusting the name and email. Nobody can edit the page and claim to be another customer.
-- **WooCommerce.** The customer is introduced by the name they gave at checkout, and _Connect the store_ takes the owner to WooCommerce's own authorization screen — WooCommerce issues the REST keys and posts them to goya24 itself. From then on the agent looks up the order a customer asks about, checks stock, and (only with a teammate's approval) changes an order's status.
+- **WooCommerce.** The customer is introduced by the name they gave at checkout, and _Connect the store_ takes the owner to WooCommerce's own authorization screen — WooCommerce issues the REST keys and posts them to goya24 itself. From then on a customer who is signed in to the store can ask about their own orders — status, items, tracking — and the agent answers from WooCommerce; a visitor who is not signed in is asked to sign in first, and nobody is shown anyone else's order. Product search is open to everyone. Changing an order's status needs a teammate's approval.
 - **Persian and English**, following the site's language, with the admin screen translated.
 
 ## Install
